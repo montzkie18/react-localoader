@@ -41,6 +41,24 @@ describe("#injectLocalization", () => {
     expect(injectLocalization(source)).toEqual(source);
   });
 
+  it("has no double declaration", () => {
+    const source = [
+      config.i18nImport,
+      config.componentImport,
+      'export default () => (',
+      '  <div title="Hello world">Welcome aboard</div>',
+      ');',
+    ].join('\n');
+
+    expect(injectLocalization(source)).toEqual([
+      config.i18nImport,
+      config.componentImport,
+      'export default () => (',
+      '  <div title={i18n.t("Hello world")}><Localize>Welcome aboard</Localize></div>',
+      ');',
+    ].join('\n'));
+  });
+
   describe("JSXText", () => {
     it("JSXText with alphanumeric text", () => {
       const source = [
