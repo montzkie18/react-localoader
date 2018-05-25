@@ -1,2 +1,3 @@
-# react-i18n-webpack
-Localize your whole React project during Webpack builds
+# React Localization Loader
+
+Automatically localize all texts in your React project during Webpack builds.

@@ -1,0 +1,6 @@
+.babelrc
+.eslint*
+.i18nrc
+.gitignore
+.npmignore
+package-lock.json

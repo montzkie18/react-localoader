@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var command = process.argv.slice(2);
+if(command.length > 0)
+  command = command.shift();
+
+try {
+  require('./' + command)();
+}catch(e) {
+  console.log("Failed to run command", e);
+}

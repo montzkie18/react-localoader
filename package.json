@@ -1,0 +1,49 @@
+{
+  "name": "react-localoader",
+  "version": "1.0.0",
+  "description": "Localize a React project during Webpack builds",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx eslint . && npx jest"
+  },
+  "bin": {
+    "react-localoader": "./bin/cli"
+  },
+  "keywords": [
+    "i18n",
+    "localization",
+    "react",
+    "webpack"
+  ],
+  "author": "Ranier Montalbo <ranier.montalbo@gmail.com>",
+  "homepage": "https://github.com/montzkie18/react-localoader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/montzkie18/react-localoader.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babylon": "6.18.0",
+    "crc32": "0.2.2",
+    "react": "16.3.2",
+    "recast": "0.14.7",
+    "speakingurl": "14.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-jest": "22.4.4",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-transform-react-jsx": "6.24.1",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "4.19.1",
+    "eslint-plugin-es5": "1.3.1",
+    "jest-cli": "22.4.4",
+    "jest-enzyme": "6.0.0",
+    "react-dom": "16.3.2"
+  }
+}
