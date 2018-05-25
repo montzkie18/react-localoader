@@ -42,17 +42,19 @@ describe("#injectLocalization", () => {
   });
 
   it("has no double declaration", () => {
+    const i18nImport = `var i18n = require("${config.i18nImport.match(/['"](.+?)['"]/)[1]}");`;
+    const componentImport = `var Localize = require("${config.componentImport.match(/['"](.+?)['"]/)[1]}")`;
     const source = [
-      config.i18nImport,
-      config.componentImport,
+      i18nImport,
+      componentImport,
       'export default () => (',
       '  <div title="Hello world">Welcome aboard</div>',
       ');',
     ].join('\n');
 
     expect(injectLocalization(source)).toEqual([
-      config.i18nImport,
-      config.componentImport,
+      i18nImport,
+      componentImport,
       'export default () => (',
       '  <div title={i18n.t("Hello world")}><Localize>Welcome aboard</Localize></div>',
       ');',
