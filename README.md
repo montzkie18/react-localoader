@@ -1,6 +1,6 @@
 # React Localization Loader
 
-[![npm version](https://img.shields.io/npm/v/react-localoader.svg?style=flat)](https://www.npmjs.com/package/react-localoader) [![Build Status](https://travis-ci.org/montzkie18/react-localoader.svg?branch=master)](https://travis-ci.org/montzkie18/react-localoader)
+[![npm version](https://badge.fury.io/js/react-localoader.svg)](https://badge.fury.io/js/react-localoader) [![Build Status](https://travis-ci.org/montzkie18/react-localoader.svg?branch=master)](https://travis-ci.org/montzkie18/react-localoader)
 
 Automatically converts all your React components from this:
 ```javascript
@@ -57,12 +57,12 @@ All configurations are loaded from `.i18nrc` JSON file located at the root of yo
 
 ```
 {
-  basePath: '.',
-  srcFolders: ['src'],
-  defaultLocale: 'en',
-  exportPath: './public/locale',
-  attributeNames: ['title', 'placeholder', 'label', 'tooltip', 'content'],
-  attributeIgnores: ['id', 'name', 'className'],
+  "basePath": ".",
+  "srcFolders": ["src"],
+  "defaultLocale": "en",
+  "exportPath": "./public/locale",
+  "attributeNames": ["text", "placeholder", "label", "content"],
+  "attributeIgnores": ["textSpacing", "labelPosition"]
 }
 ```
 
