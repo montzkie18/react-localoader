@@ -1,6 +1,6 @@
 {
   "name": "react-localoader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Localize a React project during Webpack builds",
   "main": "index.js",
   "scripts": {
